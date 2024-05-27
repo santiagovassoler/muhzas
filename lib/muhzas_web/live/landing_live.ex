@@ -1,7 +1,7 @@
 defmodule MuhzasWeb.LandingLive do
   use MuhzasWeb, :live_view
   alias Muhzas.Waitlist
-  import MuhzasWeb.Components.{Hero, GradientBlob}
+  import MuhzasWeb.Components.{Hero}
 
   def mount(_params, _session, socket) do
     form = Waitlist.changeset(%Waitlist{}, %{}) |> to_form()
